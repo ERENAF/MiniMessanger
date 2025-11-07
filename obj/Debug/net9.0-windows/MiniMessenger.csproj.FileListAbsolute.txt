@@ -1,0 +1,5 @@
+C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\MiniMessenger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\MiniMessenger.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\MiniMessenger.AssemblyInfo.cs
+C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\MiniMessenger.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\MiniMessenger.sourcelink.json
