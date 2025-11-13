@@ -15,7 +15,7 @@ namespace MiniMessenger.models
         private StreamWriter writer;
 
         public string Username { get; set; } = string.Empty;
-        public event Action<Message, ChatManager> MessageReceived;
+        public event Action<MessageClass, ChatManager> MessageReceived;
         public event Action<ChatManager, string> ClientDisconnected;
 
         public ChatManager (TcpClient client)
@@ -33,12 +33,12 @@ namespace MiniMessenger.models
                 string line;
                 while ((line = await reader.ReadLineAsync()) != null)
                 {
-                    var message = Message.FromJson(line);
+                    var message = MessageClass.FromJson(line);
 
                     if (string.IsNullOrEmpty(Username) && !string.IsNullOrEmpty(message.Author))
                     {
                         Username = message.Author;
-                        var connectMessage = new Message
+                        var connectMessage = new MessageClass
                         {
                             Author = Username,
                             MessageType = TypeMessage.Connection,
@@ -60,7 +60,7 @@ namespace MiniMessenger.models
             }
         }
 
-        public async Task SendMessageAsync(Message message)
+        public async Task SendMessageAsync(MessageClass message)
         {
             try
             {

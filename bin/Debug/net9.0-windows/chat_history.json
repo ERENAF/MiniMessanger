@@ -1,0 +1,26 @@
+[
+  {
+    "Author": "Server",
+    "Text": "Server started on port 0",
+    "CreateTime": "2025-11-13T19:35:05.5373825+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server stopped",
+    "CreateTime": "2025-11-13T19:35:14.7024868+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 12",
+    "CreateTime": "2025-11-13T19:35:21.6738244+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server stopped",
+    "CreateTime": "2025-11-13T19:35:26.4774826+10:00",
+    "MessageType": 0
+  }
+]

@@ -15,7 +15,7 @@ namespace MiniMessenger.models
         private List<ChatManager> chatManagers = new List<ChatManager>();
         private bool isRunning = false;
 
-        public event Action<Message> MessageReceived;
+        public event Action<MessageClass> MessageReceived;
         public event Action<List<string>> UserListUpdated;
 
         public async Task StartServer(int port)
@@ -59,7 +59,7 @@ namespace MiniMessenger.models
             chatManagers.Clear();
         }
 
-        private void OnMessageReceived(Message message, ChatManager sender)
+        private void OnMessageReceived(MessageClass message, ChatManager sender)
         {
             MessageReceived?.Invoke(message);
 
@@ -70,7 +70,7 @@ namespace MiniMessenger.models
                     break;
                 case TypeMessage.Connection:
                     UpdateUserList();
-                    BroadcastMessage(new Message
+                    BroadcastMessage(new MessageClass
                     {
                         Author = "Server",
                         Text = $"{message.Author} joined the chat",
@@ -85,7 +85,7 @@ namespace MiniMessenger.models
         {
             chatManagers.Remove(client);
             UpdateUserList();
-            BroadcastMessage(new Message
+            BroadcastMessage(new MessageClass
             {
                 Author = "Server",
                 Text = $"{username} left the chat",
@@ -93,7 +93,7 @@ namespace MiniMessenger.models
                 MessageType = TypeMessage.Text
             });
         }
-        private void BroadcastMessage(Message message, ChatManager excludeSender = null)
+        private void BroadcastMessage(MessageClass message, ChatManager excludeSender = null)
         {
             foreach (var client in chatManagers)
             {
@@ -113,7 +113,7 @@ namespace MiniMessenger.models
             }
             UserListUpdated?.Invoke(users);
 
-            var userListMessage = new Message
+            var userListMessage = new MessageClass
             {
                 MessageType = TypeMessage.UserList,
                 Text = string.Join(", ", users),

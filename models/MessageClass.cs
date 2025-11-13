@@ -16,7 +16,7 @@ namespace MiniMessenger.models
         UserList
     }
     [Serializable]
-    public class Message
+    public class MessageClass
     {
         public string Author { get; set; } = string.Empty;
         public string Text { get; set; } = string.Empty;
@@ -28,9 +28,9 @@ namespace MiniMessenger.models
             return JsonSerializer.Serialize(this);
         }
 
-        public static Message FromJson(string json)
+        public static MessageClass FromJson(string json)
         {
-            return JsonSerializer.Deserialize<Message>(json) ?? new Message();
+            return JsonSerializer.Deserialize<MessageClass>(json) ?? new MessageClass();
         }
 
         public override string ToString()

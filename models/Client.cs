@@ -16,7 +16,7 @@ namespace MiniMessenger.models
         private StreamWriter writer;
         private bool isConnected = false;
 
-        public event Action<Message> MessageReceived;
+        public event Action<MessageClass> MessageReceived;
         public event Action<List<String>> UserListUpdated;
         public event Action<bool> ConnectionStatusChanged;
 
@@ -36,7 +36,7 @@ namespace MiniMessenger.models
 
                 ConnectionStatusChanged?.Invoke(true);
 
-                var connectionMessage = new Message
+                var connectionMessage = new MessageClass
                 {
                     Author = username,
                     MessageType = TypeMessage.Connection,
@@ -58,7 +58,7 @@ namespace MiniMessenger.models
             isConnected = false;
             try
             {
-                var disconnectMessage = new Message
+                var disconnectMessage = new MessageClass
                 {
                     Author = username,
                     MessageType = TypeMessage.Disconnection,
@@ -74,7 +74,7 @@ namespace MiniMessenger.models
             }
         }
 
-        public async Task SendMessage(Message message)
+        public async Task SendMessage(MessageClass message)
         {
             if (!isConnected) return;
             try
@@ -94,7 +94,7 @@ namespace MiniMessenger.models
                 string line;
                 while (isConnected && (line = await reader.ReadLineAsync()) != null)
                 {
-                    var message = Message.FromJson(line);
+                    var message = MessageClass.FromJson(line);
 
                 }
             }
@@ -108,7 +108,7 @@ namespace MiniMessenger.models
             }
         }
 
-        private void ProcessReceivedMessage(Message message)
+        private void ProcessReceivedMessage(MessageClass message)
         {
             switch (message.MessageType)
             {
