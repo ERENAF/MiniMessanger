@@ -28,5 +28,149 @@
     "Text": "Server stopped",
     "CreateTime": "2025-11-13T20:21:01.6802726+10:00",
     "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 0",
+    "CreateTime": "2025-11-14T09:05:27.1314387+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server stopped",
+    "CreateTime": "2025-11-14T09:08:46.9734517+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 0",
+    "CreateTime": "2025-11-14T09:08:49.3814843+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 0",
+    "CreateTime": "2025-11-14T09:08:53.2096003+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server stopped",
+    "CreateTime": "2025-11-14T09:08:54.2980129+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 0",
+    "CreateTime": "2025-11-14T09:16:36.6402244+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server stopped",
+    "CreateTime": "2025-11-14T09:17:37.566597+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port System.Func\u00601[System.String]:0",
+    "CreateTime": "2025-11-14T09:20:25.5748057+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10:0",
+    "CreateTime": "2025-11-14T09:20:44.0621305+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server stopped",
+    "CreateTime": "2025-11-14T09:20:53.5380019+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10:0",
+    "CreateTime": "2025-11-14T09:20:54.6427717+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 0",
+    "CreateTime": "2025-11-14T09:21:23.6826494+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server stopped",
+    "CreateTime": "2025-11-14T09:21:25.7051126+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 100",
+    "CreateTime": "2025-11-14T09:24:15.037534+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server stopped",
+    "CreateTime": "2025-11-14T09:24:19.973333+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-14T09:25:07.4934251+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-14T09:26:12.9899618+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:26:27.3723157+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:26:27.3710422+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:26:35.5908745+10:00",
+    "MessageType": 2
+  },
+  {
+    "Author": "\u0415\u0433\u043E\u0440",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:26:43.7351348+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "\u0415\u0433\u043E\u0440",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:26:43.7348086+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "\u0415\u0433\u043E\u0440",
+    "Text": "\u044B\u0444\u0432\u0444\u0432\u0444\u0430\u0444\u044B\u0430\u0444",
+    "CreateTime": "2025-11-14T09:26:55.7176336+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "\u0415\u0433\u043E\u0440",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:27:02.8175696+10:00",
+    "MessageType": 2
   }
 ]

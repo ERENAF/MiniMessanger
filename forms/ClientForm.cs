@@ -54,7 +54,7 @@ namespace MiniMessenger.forms
             serverIPLabel = new Label { Text = "Server IP:", Location = new Point(10, 15), Size = new Size(60, 20) };
             serverIPTextBox = new TextBox { Location = new Point(75, 12), Size = new Size(60, 20) };
             portLabel = new Label { Text = "Port:", Location = new Point(185, 15), Size = new Size(30, 20) };
-            portTextBox = new NumericUpDown { Location = new Point(220, 12), Size = new Size(60, 20) };
+            portTextBox = new NumericUpDown { Location = new Point(220, 12), Size = new Size(60, 20), Minimum = 49152, Maximum = 65535 };
             usernameLabel = new Label { Text = "Username:", Location = new Point(290, 15), Size = new Size(60, 20) };
             usernameTextBox = new TextBox { Text = "User", Location = new Point(355, 12), Size = new Size(100, 20) };
             connectButton = new Button { Text = "Connect", Location = new Point(465, 10), Size = new Size(80, 25) };

@@ -14,6 +14,8 @@ namespace MiniMessenger
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            var serverForm = new ServerForm();
+            serverForm.Show();
             Application.Run(new ClientForm());
         }
     }

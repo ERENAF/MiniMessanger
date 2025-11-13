@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -17,6 +19,8 @@ namespace MiniMessenger.forms
     {
         public Server server;
         private List<MessageClass> mhistory = new List<MessageClass>();
+        private IPAddress ipAddress;
+
         private TextBox chatHistory;
         private ListBox userList;
         private SplitContainer splitContainer;
@@ -26,9 +30,10 @@ namespace MiniMessenger.forms
         private Button stopServerBTN;
         private Label portLBL;
         private NumericUpDown portNUD;
-        
+        private Label ipAddressLBL;
         public ServerForm()
         {
+            ipAddress = GetIPAddress();
             InitializeComponent();
             server = new Server();
             server.MessageReceived += OnMessageReceived;
@@ -46,12 +51,13 @@ namespace MiniMessenger.forms
             startServerBTN = new Button { Text = "Запустить сервер", Location = new Point(10, 10), Size = new Size(100, 30) };
             stopServerBTN = new Button { Text = "Выключить сервер", Location = new Point(120, 10), Size = new Size(100, 30) };
             portLBL = new Label { Text = "Port:", Location = new Point(230, 15), Size = new Size(40, 20) };
-            portNUD = new NumericUpDown {Location = new Point(270,12), Size = new Size(80,20)};
+            portNUD = new NumericUpDown {Location = new Point(270,12), Size = new Size(80,20), Minimum = 49152, Maximum = 65535};
+            ipAddressLBL = new Label { Text = $"IP: {ipAddress.ToString()}", Location = new Point (10,60), Size = new Size(240,20)};
 
             startServerBTN.Click += (s, e) => StartServer((int)portNUD.Value);
             stopServerBTN.Click += (s, e) => StopServer();
 
-            controlPNL.Controls.AddRange(new Control[] { startServerBTN, stopServerBTN, portLBL, portNUD});
+            controlPNL.Controls.AddRange(new Control[] { startServerBTN, stopServerBTN, portLBL, portNUD, ipAddressLBL});
 
             var chatHistory = new TextBox
             {
@@ -85,8 +91,8 @@ namespace MiniMessenger.forms
         {
             try
             {
-                await server.StartServer(port);
-                AddServerMessage($"Server started on port {port}");
+                await server.StartServer(ipAddress,port);
+                AddServerMessage($"Server started on port {ipAddress.ToString()} : {port}");
             }
             catch (Exception ex)
             {
@@ -160,5 +166,20 @@ namespace MiniMessenger.forms
                 Console.WriteLine($"Failed to load chat history: {ex.Message}");
             }
         }
+
+        private IPAddress GetIPAddress()
+        {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    return ip;
+                }
+            }
+            throw new Exception("No network adapters with an IPv4 address in the system!");
+        }
+
+
     }
 }

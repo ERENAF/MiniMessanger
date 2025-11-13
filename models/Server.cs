@@ -18,11 +18,12 @@ namespace MiniMessenger.models
         public event Action<MessageClass> MessageReceived;
         public event Action<List<string>> UserListUpdated;
 
-        public async Task StartServer(int port)
+        public async Task StartServer(IPAddress ipAddress, int port)
         {
-            listener = new TcpListener(IPAddress.Any, port);
+            listener = new TcpListener(ipAddress, port);
             listener.Start();
             isRunning = true;
+
 
             _ = Task.Run(async () =>
 
