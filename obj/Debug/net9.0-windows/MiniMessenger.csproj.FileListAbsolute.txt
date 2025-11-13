@@ -3,3 +3,16 @@ C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\MiniMessenger.
 C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\MiniMessenger.AssemblyInfo.cs
 C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\MiniMessenger.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\MiniMessenger.sourcelink.json
+C:\Users\user\source\repos\MiniMessenger\bin\Debug\net9.0-windows\MiniMessenger.exe
+C:\Users\user\source\repos\MiniMessenger\bin\Debug\net9.0-windows\MiniMessenger.deps.json
+C:\Users\user\source\repos\MiniMessenger\bin\Debug\net9.0-windows\MiniMessenger.runtimeconfig.json
+C:\Users\user\source\repos\MiniMessenger\bin\Debug\net9.0-windows\MiniMessenger.dll
+C:\Users\user\source\repos\MiniMessenger\bin\Debug\net9.0-windows\MiniMessenger.pdb
+C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\MiniMessenger.forms.ClientForm.resources
+C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\MiniMessenger.forms.ServerForm.resources
+C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\MiniMessenger.csproj.GenerateResource.cache
+C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\MiniMessenger.dll
+C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\refint\MiniMessenger.dll
+C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\MiniMessenger.pdb
+C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\MiniMessenger.genruntimeconfig.cache
+C:\Users\user\source\repos\MiniMessenger\obj\Debug\net9.0-windows\ref\MiniMessenger.dll
