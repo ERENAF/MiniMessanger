@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MiniMessenger.models
 {
-    public class ChatManager
+    public class CLientHadler
     {
         private TcpClient client;
         private NetworkStream stream;
@@ -15,10 +15,10 @@ namespace MiniMessenger.models
         private StreamWriter writer;
 
         public string Username { get; set; } = string.Empty;
-        public event Action<MessageClass, ChatManager> MessageReceived;
-        public event Action<ChatManager, string> ClientDisconnected;
+        public event Action<MessageClass, CLientHadler> MessageReceived;
+        public event Action<CLientHadler, string> ClientDisconnected;
 
-        public ChatManager (TcpClient client)
+        public CLientHadler (TcpClient client)
         {
             this.client = client;
             stream = client.GetStream ();

@@ -12,7 +12,7 @@ namespace MiniMessenger.models
     public class Server
     {
         private TcpListener listener;
-        private List<ChatManager> chatManagers = new List<ChatManager>();
+        private List<CLientHadler> chatManagers = new List<CLientHadler>();
         private bool isRunning = false;
 
         public event Action<MessageClass> MessageReceived;
@@ -32,7 +32,7 @@ namespace MiniMessenger.models
                     try
                     {
                         var client = await listener.AcceptTcpClientAsync();
-                        var handler = new ChatManager(client);
+                        var handler = new CLientHadler(client);
                         handler.MessageReceived += OnMessageReceived;
                         handler.ClientDisconnected += OnClientDisconnected;
                         _ = handler.HandleClientAsync();
@@ -59,7 +59,7 @@ namespace MiniMessenger.models
             chatManagers.Clear();
         }
 
-        private void OnMessageReceived(MessageClass message, ChatManager sender)
+        private void OnMessageReceived(MessageClass message, CLientHadler sender)
         {
             MessageReceived?.Invoke(message);
 
@@ -81,7 +81,7 @@ namespace MiniMessenger.models
             }
         }
 
-        private void OnClientDisconnected(ChatManager client,string username)
+        private void OnClientDisconnected(CLientHadler client,string username)
         {
             chatManagers.Remove(client);
             UpdateUserList();
@@ -93,7 +93,7 @@ namespace MiniMessenger.models
                 MessageType = TypeMessage.Text
             });
         }
-        private void BroadcastMessage(MessageClass message, ChatManager excludeSender = null)
+        private void BroadcastMessage(MessageClass message, CLientHadler excludeSender = null)
         {
             foreach (var client in chatManagers)
             {

@@ -22,5 +22,11 @@
     "Text": "Server stopped",
     "CreateTime": "2025-11-13T19:35:26.4774826+10:00",
     "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server stopped",
+    "CreateTime": "2025-11-13T20:21:01.6802726+10:00",
+    "MessageType": 0
   }
 ]
