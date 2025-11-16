@@ -25,6 +25,7 @@ namespace MiniMessenger.models
         public TypeMessage MessageType { get; set; }
         public byte[] FileData { get; set;  } = Array.Empty<byte>();
         public string FileName { get; set; } = string.Empty;
+        public string Recipient { get; set; } = string.Empty;
 
         public string ToJson()
         {

@@ -107,17 +107,25 @@ namespace MiniMessenger.models
 
         private async void BroadcastMessage(MessageClass message)
         {
-            var tasks = new List<Task>();
-            foreach (var client in chatManagers.ToList())
+            if (message.Recipient == null)
             {
-                try
+                var tasks = new List<Task>();
+                foreach (var client in chatManagers.ToList())
                 {
-                    tasks.Add(client.SendMessageAsync(message));
+                    try
+                    {
+                        tasks.Add(client.SendMessageAsync(message));
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"[SERVER] Error sending to client {client.Username}: {ex.Message}");
+                    }
                 }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"[SERVER] Error sending to client {client.Username}: {ex.Message}");
-                }
+            }
+            else
+            {
+                var recipient = chatManagers.Find(c => c.Username == message.Recipient);
+                recipient?.SendMessageAsync(message);
             }
         }
 

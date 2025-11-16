@@ -36,6 +36,7 @@ namespace MiniMessenger.forms
         private SplitContainer splitContainer;
         private TextBox chatHistory;
         private ListBox userList;
+        private ComboBox recipientComboBox;
         public ClientForm()
         {
             InitializeComponent();
@@ -70,9 +71,10 @@ namespace MiniMessenger.forms
             messagePanel = new Panel { Dock = DockStyle.Bottom, Height = 80 };
             messageTextBox = new TextBox { Location = new Point(10, 10), Size = new Size(400, 40), Multiline = true };
             sendButton = new Button { Text = "Отправить", Location = new Point(420, 10), Size = new Size(80, 40) };
-            attachButton = new Button { Text = "Прикрепить", Location = new Point(420, 60), Size = new Size(80, 40) };
+            attachButton = new Button { Text = "Прикрепить", Location = new Point(500, 10), Size = new Size(90, 40) };
+            recipientComboBox = new ComboBox { Location = new Point(600,10), Size = new Size(150,20), DropDownStyle = ComboBoxStyle.DropDownList};
 
-            messagePanel.Controls.AddRange(new Control[] { messageTextBox, sendButton, attachButton });
+            messagePanel.Controls.AddRange(new Control[] { messageTextBox, sendButton, attachButton, recipientComboBox });
 
             splitContainer = new SplitContainer { Dock = DockStyle.Fill };
             chatHistory = new TextBox
@@ -143,7 +145,8 @@ namespace MiniMessenger.forms
                 Author = usernameTextBox.Text,
                 Text = messageTextBox.Text.Trim(),
                 CreateTime = DateTime.Now,
-                MessageType = TypeMessage.Text
+                MessageType = TypeMessage.Text,
+                Recipient = recipientComboBox.SelectedItem?.ToString() ?? ""
             };
 
             await client.SendMessage(message);
@@ -174,6 +177,7 @@ namespace MiniMessenger.forms
                     Text = "File attachment",
                     CreateTime = DateTime.Now,
                     MessageType= TypeMessage.File,
+                    Recipient = recipientComboBox.SelectedItem?.ToString() ?? "",
                     FileData = file,
                     FileName = fileData.Name
                 };
@@ -210,11 +214,14 @@ namespace MiniMessenger.forms
                 return;
             }
             userList.Items.Clear();
+            recipientComboBox.Items.Clear();
+            recipientComboBox.Items.Add("");
             foreach (var user in users)
             {
                 if (user != usernameTextBox.Text)
                 {
                     userList.Items.Add(user);
+                    recipientComboBox.Items.Add(user);
                 }
             }
         }
