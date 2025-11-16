@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace MiniMessenger.models
 {
-    public class CLientHadler
+
+    public class ClientHandler
     {
         private TcpClient client;
         private NetworkStream stream;
@@ -15,15 +16,15 @@ namespace MiniMessenger.models
         private StreamWriter writer;
 
         public string Username { get; set; } = string.Empty;
-        public event Action<MessageClass, CLientHadler> MessageReceived;
-        public event Action<CLientHadler, string> ClientDisconnected;
+        public event Action<MessageClass, ClientHandler> MessageReceived;
+        public event Action<ClientHandler, string> ClientDisconnected;
 
-        public CLientHadler (TcpClient client)
+        public ClientHandler(TcpClient client)
         {
             this.client = client;
-            stream = client.GetStream ();
-            reader = new StreamReader (stream);
-            writer = new StreamWriter(stream) { AutoFlush = true };
+            stream = client.GetStream();
+            reader = new StreamReader(stream, Encoding.UTF8);
+            writer = new StreamWriter(stream, Encoding.UTF8) { AutoFlush = true };
         }
 
         public async Task HandleClientAsync()
@@ -38,21 +39,14 @@ namespace MiniMessenger.models
                     if (string.IsNullOrEmpty(Username) && !string.IsNullOrEmpty(message.Author))
                     {
                         Username = message.Author;
-                        var connectMessage = new MessageClass
-                        {
-                            Author = Username,
-                            MessageType = TypeMessage.Connection,
-                            CreateTime = DateTime.Now
-                        };
-
-                        MessageReceived?.Invoke(connectMessage, this);
                     }
+
                     MessageReceived?.Invoke(message, this);
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Client hadling error: {ex.Message}");
+                Console.WriteLine($"Client handling error: {ex.Message}");
             }
             finally
             {
@@ -68,21 +62,29 @@ namespace MiniMessenger.models
             }
             catch (Exception ex)
             {
+                Console.WriteLine($"Error sending message: {ex.Message}");
                 Disconnect();
             }
         }
 
         public void Disconnect()
         {
-            if (!string.IsNullOrEmpty(Username))
+            try
             {
-                ClientDisconnected?.Invoke(this, Username);
-            }
+                if (!string.IsNullOrEmpty(Username))
+                {
+                    ClientDisconnected?.Invoke(this, Username);
+                }
 
-            reader?.Close();
-            writer?.Close();
-            stream?.Close();
-            client?.Close();
+                reader?.Close();
+                writer?.Close();
+                stream?.Close();
+                client?.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error during disconnect: {ex.Message}");
+            }
         }
     }
 }

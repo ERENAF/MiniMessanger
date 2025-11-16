@@ -59,7 +59,7 @@ namespace MiniMessenger.forms
 
             controlPNL.Controls.AddRange(new Control[] { startServerBTN, stopServerBTN, portLBL, portNUD, ipAddressLBL});
 
-            var chatHistory = new TextBox
+            chatHistory = new TextBox
             {
                 Multiline = true,
                 ScrollBars = ScrollBars.Vertical,
@@ -81,10 +81,6 @@ namespace MiniMessenger.forms
             splitContainer.Panel2.Controls.Add(userList);
 
             this.Controls.AddRange(new Control[] { splitContainer, controlPNL });
-
-            this.chatHistory = chatHistory;
-            this.userList = userList;
-            this.portNUD = portNUD;
         }
 
         private async void StartServer(int port)
@@ -113,7 +109,7 @@ namespace MiniMessenger.forms
             }
             mhistory.Add(message);
             chatHistory.AppendText($"{message}\r\n");
-            SaveChatHistory();
+            Task.Run(()=> SaveChatHistory());
         }
         private void OnUserListUpdated(List<String> users)
         {
@@ -122,7 +118,13 @@ namespace MiniMessenger.forms
                 Invoke(new Action<List<string>> (OnUserListUpdated), users);
                 return;
             }
+            userList.Items.Clear();
+            foreach (var user in users)
+            {
+                userList.Items.Add(user);
+            }
         }
+
         private void AddServerMessage(string text)
         {
             var message = new MessageClass()
@@ -135,12 +137,12 @@ namespace MiniMessenger.forms
             OnMessageReceived(message);
         }
 
-        private void SaveChatHistory()
+        private async Task SaveChatHistory()
         {
             try
             {
                 var json = JsonSerializer.Serialize(mhistory, new JsonSerializerOptions { WriteIndented = true });
-                File.WriteAllText("chat_history.json", json);
+                await File.WriteAllTextAsync("chat_history.json", json);
             }
             catch (Exception ex)
             {
@@ -158,6 +160,7 @@ namespace MiniMessenger.forms
                     foreach (var message in mhistory)
                     {
                         chatHistory.AppendText($"{message}\r\n");
+
                     }
                 }
             }

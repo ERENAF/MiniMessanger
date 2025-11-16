@@ -95,30 +95,21 @@ namespace MiniMessenger.models
                 while (isConnected && (line = await reader.ReadLineAsync()) != null)
                 {
                     var message = MessageClass.FromJson(line);
-
+                    if (message.MessageType == TypeMessage.UserList)
+                    {
+                        var users = new List<string>(message.Text.Split(','));
+                        UserListUpdated?.Invoke(users);
+                    }
+                    else
+                    {
+                        MessageReceived?.Invoke(message);
+                    }
                 }
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Receive error: {ex.Message}");
-            }
+            catch { }
             finally
             {
                 Disconnect();
-            }
-        }
-
-        private void ProcessReceivedMessage(MessageClass message)
-        {
-            switch (message.MessageType)
-            {
-                case TypeMessage.UserList:
-                    var users = new List<string>(message.Text.Split(','));
-                    UserListUpdated?.Invoke(users);
-                    break;
-                default:
-                    MessageReceived?.Invoke(message);
-                    break;
             }
         }
 

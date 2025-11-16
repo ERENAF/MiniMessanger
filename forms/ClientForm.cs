@@ -90,16 +90,6 @@ namespace MiniMessenger.forms
 
             this.Controls.AddRange(new Control[] { splitContainer, messagePanel, connectionPanel });
 
-            this.chatHistory = chatHistory;
-            this.userList = userList;
-            this.messageTextBox = messageTextBox;
-            this.sendButton = sendButton;
-            this.serverIPTextBox = serverIPTextBox;
-            this.portTextBox = portTextBox;
-            this.usernameTextBox = usernameTextBox;
-            this.connectButton = connectButton;
-            this.disconnectButton = disconnectButton;
-
             connectButton.Click += (s, e) => ConnectToServer();
             disconnectButton.Click += (s, e) => Disconnect();
             sendButton.Click += (s, e) => SendMessage();
@@ -111,6 +101,8 @@ namespace MiniMessenger.forms
                     SendMessage();
                 }
             };
+
+            LoadChatHistory();
         }
 
         private async void ConnectToServer()
@@ -161,8 +153,13 @@ namespace MiniMessenger.forms
                 Invoke(new Action<MessageClass>(OnMessageReceived), message);
                 return;
             }
+
+            chatHistory.AppendText(message.ToString() + Environment.NewLine);
+            chatHistory.SelectionStart = chatHistory.Text.Length;
+            chatHistory.ScrollToCaret();
+
             mHistory.Add(message);
-            SaveChatHistory();
+            Task.Run(() => SaveChatHistory());
         }
 
         private void OnUserListUpdated(List<string> users)
@@ -194,14 +191,20 @@ namespace MiniMessenger.forms
             connectButton.Enabled = !connected;
             disconnectButton.Enabled = connected;
             sendButton.Enabled = connected;
+            messageTextBox.Enabled = connected;
+
+            if (!connected) 
+            {
+                userList.Items.Clear();
+            }
         }
 
-        private void SaveChatHistory()
+        private async Task SaveChatHistory()
         {
             try
             {
                 var json = JsonSerializer.Serialize(mHistory, new JsonSerializerOptions { WriteIndented = true });
-                File.WriteAllText("client_chat_history.json", json);
+                await File.WriteAllTextAsync("client_chat_history.json", json);
             }
             catch (Exception ex)
             {
@@ -218,10 +221,16 @@ namespace MiniMessenger.forms
                     var json = File.ReadAllText("client_chat_history.json");
                     mHistory = JsonSerializer.Deserialize<List<MessageClass>>(json) ?? new List<MessageClass>();
 
+                    chatHistory.Clear();
+
                     foreach (var message in mHistory)
                     {
-                        chatHistory.AppendText($"{message}\r\n");
+
+                        chatHistory.AppendText(message.ToString()+Environment.NewLine);
                     }
+
+                    chatHistory.SelectionStart = chatHistory.Text.Length;
+                    chatHistory.ScrollToCaret();
                 }
             }
             catch (Exception ex)

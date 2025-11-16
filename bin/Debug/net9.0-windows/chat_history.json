@@ -172,5 +172,635 @@
     "Text": "",
     "CreateTime": "2025-11-14T09:27:02.8175696+10:00",
     "MessageType": 2
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-14T09:38:16.2619055+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "\u0415\u0413\u041E\u0440\u0445",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:38:39.6057203+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "\u0415\u0413\u041E\u0440\u0445",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:38:39.6045246+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "\u0415\u0413\u041E\u0440\u0445",
+    "Text": "\u041F\u0420\u0438\u0432\u0435\u0442",
+    "CreateTime": "2025-11-14T09:38:45.7733416+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-14T09:43:16.5392342+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "asdafasfa",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:43:19.7838642+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "asdafasfa",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:43:19.782524+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "asdafasfa",
+    "Text": "sdadsa",
+    "CreateTime": "2025-11-14T09:43:24.3238213+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-14T09:48:26.6811829+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:48:38.9519797+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:48:38.9506686+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "sdasd",
+    "CreateTime": "2025-11-14T09:48:41.361564+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "dadsadafafasdasdadasd",
+    "CreateTime": "2025-11-14T09:48:58.996141+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-14T09:55:13.9680253+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:55:16.3444684+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:55:16.343238+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "asda",
+    "CreateTime": "2025-11-14T09:55:19.6456663+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-14T09:57:09.7426206+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "TAsda",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:57:11.8063366+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "TAsda",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:57:11.8050373+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "TAsda",
+    "Text": "dafaf",
+    "CreateTime": "2025-11-14T09:57:15.6187518+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "TAsda",
+    "Text": "dasdada",
+    "CreateTime": "2025-11-14T09:57:20.6053577+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "TAsda",
+    "Text": "",
+    "CreateTime": "2025-11-14T09:57:21.9543284+10:00",
+    "MessageType": 2
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-14T10:05:32.9112492+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T10:05:35.1273139+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T10:05:35.1257539+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "ad",
+    "CreateTime": "2025-11-14T10:05:38.8408731+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-14T10:19:41.1675733+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T10:19:43.568748+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T10:19:43.5671692+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "sad",
+    "CreateTime": "2025-11-14T10:19:46.982725+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T10:20:24.7836399+10:00",
+    "MessageType": 2
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-14T10:33:10.8574696+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T10:33:25.5732574+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T10:33:25.5720557+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "asdada",
+    "CreateTime": "2025-11-14T10:33:29.8844254+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "ssaddasda",
+    "CreateTime": "2025-11-14T10:35:22.597457+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T10:36:19.5881517+10:00",
+    "MessageType": 2
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T10:36:26.213341+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-14T10:36:26.2127433+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T10:56:04.0589288+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T10:56:06.3352486+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T10:56:06.3331385+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "\u0432\u0444\u044B\u0432\u0444\u0432",
+    "CreateTime": "2025-11-16T10:56:11.0161084+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T10:56:17.5315914+10:00",
+    "MessageType": 2
+  },
+  {
+    "Author": "Server",
+    "Text": "Server stopped",
+    "CreateTime": "2025-11-16T10:56:21.4016776+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T10:57:50.8673729+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "\u043F\u043E\u0434\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435",
+    "CreateTime": "2025-11-16T10:57:52.9602366+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T10:57:52.9589811+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T11:10:59.0919457+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "\u043F\u043E\u0434\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435",
+    "CreateTime": "2025-11-16T11:11:00.9263735+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "\u043F\u043E\u0434\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435",
+    "CreateTime": "2025-11-16T11:11:20.8141446+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T11:14:43.4664684+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "\u043F\u043E\u0434\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435",
+    "CreateTime": "2025-11-16T11:14:46.0328009+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T11:18:34.0790458+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "\u043F\u043E\u0434\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435",
+    "CreateTime": "2025-11-16T11:18:36.8369301+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:18:36.8356555+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "sdasda",
+    "CreateTime": "2025-11-16T11:18:41.7131161+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "\u043F\u0440\u0438\u0432\u0435\u0442",
+    "CreateTime": "2025-11-16T11:18:47.9876798+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T11:23:17.4439731+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "\u043F\u043E\u0434\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435",
+    "CreateTime": "2025-11-16T11:23:19.5819247+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "esadd",
+    "CreateTime": "2025-11-16T11:23:23.9311551+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:23:28.311591+10:00",
+    "MessageType": 2
+  },
+  {
+    "Author": "User",
+    "Text": "\u043F\u043E\u0434\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435",
+    "CreateTime": "2025-11-16T11:23:30.6734919+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T11:26:02.5874579+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:26:05.6723971+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "\u0432",
+    "CreateTime": "2025-11-16T11:26:12.2646236+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:26:15.6883246+10:00",
+    "MessageType": 2
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T11:27:07.6425901+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:27:23.9137058+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "sd",
+    "CreateTime": "2025-11-16T11:27:30.0737373+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:27:39.259389+10:00",
+    "MessageType": 2
+  },
+  {
+    "Author": "Server",
+    "Text": "User left the chat",
+    "CreateTime": "2025-11-16T11:27:39.2852925+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:27:42.3296998+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:27:45.6098198+10:00",
+    "MessageType": 2
+  },
+  {
+    "Author": "Server",
+    "Text": "User left the chat",
+    "CreateTime": "2025-11-16T11:27:45.6316441+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:27:47.6176859+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T11:35:18.3513391+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:36:19.170232+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "asdada",
+    "CreateTime": "2025-11-16T11:36:32.0250102+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:36:33.8023669+10:00",
+    "MessageType": 2
+  },
+  {
+    "Author": "Server",
+    "Text": "User left the chat",
+    "CreateTime": "2025-11-16T11:36:34.3276338+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T11:38:42.8730305+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:39:05.9942037+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User",
+    "Text": "d",
+    "CreateTime": "2025-11-16T11:39:13.9076238+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T11:40:12.3730866+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:40:14.6278426+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "tuj",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:40:28.6661943+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "tuj",
+    "Text": "dasda",
+    "CreateTime": "2025-11-16T11:40:32.4012753+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User",
+    "Text": "dadasd",
+    "CreateTime": "2025-11-16T11:40:39.0036123+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T11:47:19.8780113+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User1",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:47:34.6235749+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User2",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:47:57.0054186+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User2",
+    "Text": "dsada",
+    "CreateTime": "2025-11-16T11:47:58.4464205+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User1",
+    "Text": "\u043F\u0440\u0438\u0432\u0435\u0442",
+    "CreateTime": "2025-11-16T11:48:10.6303266+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User2",
+    "Text": "\u043F\u0440\u0438\u0432\u0435\u0442",
+    "CreateTime": "2025-11-16T11:48:13.6248062+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User1",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:48:23.7034545+10:00",
+    "MessageType": 2
+  },
+  {
+    "Author": "Server",
+    "Text": "User1 left the chat",
+    "CreateTime": "2025-11-16T11:48:23.7382949+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User2",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:48:23.7531922+10:00",
+    "MessageType": 2
+  },
+  {
+    "Author": "Server",
+    "Text": "User2 left the chat",
+    "CreateTime": "2025-11-16T11:48:23.755925+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T11:56:21.2604408+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User1",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:56:35.3527196+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User1",
+    "Text": "asdas",
+    "CreateTime": "2025-11-16T11:56:36.9873301+10:00",
+    "MessageType": 0
+  },
+  {
+    "Author": "User2",
+    "Text": "",
+    "CreateTime": "2025-11-16T11:56:52.501631+10:00",
+    "MessageType": 1
+  },
+  {
+    "Author": "User2",
+    "Text": "2312sada",
+    "CreateTime": "2025-11-16T11:56:57.2891634+10:00",
+    "MessageType": 0
   }
 ]

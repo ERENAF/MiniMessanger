@@ -12,7 +12,7 @@ namespace MiniMessenger.models
     public class Server
     {
         private TcpListener listener;
-        private List<CLientHadler> chatManagers = new List<CLientHadler>();
+        private List<ClientHandler> chatManagers = new List<ClientHandler>();
         private bool isRunning = false;
 
         public event Action<MessageClass> MessageReceived;
@@ -24,16 +24,18 @@ namespace MiniMessenger.models
             listener.Start();
             isRunning = true;
 
-
             _ = Task.Run(async () =>
-
             {
                 while (isRunning)
                 {
                     try
                     {
                         var client = await listener.AcceptTcpClientAsync();
-                        var handler = new CLientHadler(client);
+                        var handler = new ClientHandler(client);
+
+                        // ДОБАВЛЯЕМ клиента в список сразу при подключении
+                        chatManagers.Add(handler);
+
                         handler.MessageReceived += OnMessageReceived;
                         handler.ClientDisconnected += OnClientDisconnected;
                         _ = handler.HandleClientAsync();
@@ -49,19 +51,10 @@ namespace MiniMessenger.models
                 }
             });
         }
-        public void StopServer()
-        {
-            isRunning = false;
-            listener?.Stop();
-            foreach (var client in chatManagers.ToArray())
-            {
-                client.Disconnect();
-            }
-            chatManagers.Clear();
-        }
 
-        private void OnMessageReceived(MessageClass message, CLientHadler sender)
+        private void OnMessageReceived(MessageClass message, ClientHandler sender)
         {
+            // Отображаем сообщение на сервере
             MessageReceived?.Invoke(message);
 
             switch (message.MessageType)
@@ -70,60 +63,97 @@ namespace MiniMessenger.models
                     BroadcastMessage(message, sender);
                     break;
                 case TypeMessage.Connection:
+                    // При подключении обновляем список пользователей
                     UpdateUserList();
-                    BroadcastMessage(new MessageClass
+                    // И рассылаем уведомление
+                    var notificationMessage = new MessageClass
                     {
                         Author = "Server",
                         Text = $"{message.Author} joined the chat",
                         MessageType = TypeMessage.Text,
                         CreateTime = DateTime.Now
-                    });
+                    };
+                    BroadcastMessage(notificationMessage);
+                    break;
+                case TypeMessage.Disconnection:
+                    // Обработка отключения
                     break;
             }
         }
 
-        private void OnClientDisconnected(CLientHadler client,string username)
+        private void OnClientDisconnected(ClientHandler client, string username)
         {
             chatManagers.Remove(client);
             UpdateUserList();
-            BroadcastMessage(new MessageClass
+
+            var notificationMessage = new MessageClass
             {
                 Author = "Server",
                 Text = $"{username} left the chat",
                 CreateTime = DateTime.Now,
                 MessageType = TypeMessage.Text
-            });
+            };
+            BroadcastMessage(notificationMessage);
+            MessageReceived?.Invoke(notificationMessage);
         }
-        private void BroadcastMessage(MessageClass message, CLientHadler excludeSender = null)
+
+        private async void BroadcastMessage(MessageClass message, ClientHandler excludeSender = null)
         {
-            foreach (var client in chatManagers)
+            var tasks = new List<Task>();
+            foreach (var client in chatManagers.ToList())
             {
-                if (client != excludeSender) _ = client.SendMessageAsync(message);
+                try
+                {
+                    if (message.MessageType == TypeMessage.Text)
+                    {
+                        tasks.Add(client.SendMessageAsync(message));
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"[SERVER] Error sending to client {client.Username}: {ex.Message}");
+                }
             }
         }
 
         private void UpdateUserList()
         {
-            var users = new List<string>();
-            foreach (var user in chatManagers)
-            {
-                if (!string.IsNullOrEmpty(user.Username))
-                {
-                    users.Add(user.Username);
-                }
-            }
+            var users = chatManagers
+                .Where(client => !string.IsNullOrEmpty(client.Username))
+                .Select(client => client.Username)
+                .ToList();
+
             UserListUpdated?.Invoke(users);
 
             var userListMessage = new MessageClass
             {
                 MessageType = TypeMessage.UserList,
-                Text = string.Join(", ", users),
+                Text = string.Join(",", users), 
                 CreateTime = DateTime.Now,
             };
-            foreach (var user in chatManagers)
+
+            foreach (var client in chatManagers.ToList())
             {
-                _ = user.SendMessageAsync(userListMessage);
+                try
+                {
+                    _ = client.SendMessageAsync(userListMessage);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error sending user list: {ex.Message}");
+                }
             }
+        }
+
+        public void StopServer()
+        {
+            isRunning = false;
+            listener?.Stop();
+            foreach (var client in chatManagers.ToList())
+            {
+                client.Disconnect();
+            }
+            chatManagers.Clear();
         }
     }
 }

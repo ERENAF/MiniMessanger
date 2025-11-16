@@ -16,6 +16,8 @@ namespace MiniMessenger
             Application.SetCompatibleTextRenderingDefault(false);
             var serverForm = new ServerForm();
             serverForm.Show();
+            var chatForm = new ClientForm();
+            chatForm.Show();
             Application.Run(new ClientForm());
         }
     }
