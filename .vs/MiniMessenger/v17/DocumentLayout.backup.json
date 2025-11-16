@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\MiniMessenger\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|c:\\users\\user\\source\\repos\\minimessenger\\models\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|solutionrelative:models\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|c:\\users\\user\\source\\repos\\minimessenger\\forms\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|solutionrelative:forms\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|c:\\users\\user\\source\\repos\\minimessenger\\forms\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|solutionrelative:forms\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|c:\\users\\user\\source\\repos\\minimessenger\\models\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|solutionrelative:models\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|c:\\users\\user\\source\\repos\\minimessenger\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|solutionrelative:models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|c:\\users\\user\\source\\repos\\minimessenger\\forms\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|solutionrelative:forms\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|c:\\users\\user\\source\\repos\\minimessenger\\models\\clienthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|solutionrelative:models\\clienthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|c:\\users\\user\\source\\repos\\minimessenger\\models\\messageclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|solutionrelative:models\\messageclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|c:\\users\\user\\source\\repos\\minimessenger\\forms\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|solutionrelative:forms\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|c:\\users\\user\\source\\repos\\minimessenger\\forms\\clientform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|C:\\Users\\user\\source\\repos\\MiniMessenger\\forms\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|solutionrelative:forms\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|c:\\users\\user\\source\\repos\\minimessenger\\models\\messageclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|solutionrelative:models\\messageclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|c:\\users\\user\\source\\repos\\minimessenger\\models\\clienthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|solutionrelative:models\\clienthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE2FBC6D-CEDC-4E9B-AC74-AD859B15258E}|MiniMessenger.csproj|c:\\users\\user\\source\\repos\\minimessenger\\programmchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,43 +62,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ServerForm.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MiniMessenger\\forms\\ServerForm.cs",
-              "RelativeDocumentMoniker": "forms\\ServerForm.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\MiniMessenger\\forms\\ServerForm.cs",
-              "RelativeToolTip": "forms\\ServerForm.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAWwG8AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T08:44:34.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClientForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MiniMessenger\\forms\\ClientForm.Designer.cs",
-              "RelativeDocumentMoniker": "forms\\ClientForm.Designer.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\MiniMessenger\\forms\\ClientForm.Designer.cs",
-              "RelativeToolTip": "forms\\ClientForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T10:09:26.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ClientForm.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MiniMessenger\\forms\\ClientForm.cs",
               "RelativeDocumentMoniker": "forms\\ClientForm.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\MiniMessenger\\forms\\ClientForm.cs",
               "RelativeToolTip": "forms\\ClientForm.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAQwJQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAkwMYAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-13T09:37:32.507Z",
               "EditorCaption": ""
@@ -111,61 +85,85 @@
               "RelativeDocumentMoniker": "models\\Client.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\MiniMessenger\\models\\Client.cs",
               "RelativeToolTip": "models\\Client.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAQwFgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAQwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-06T23:23:20.521Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Server.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MiniMessenger\\models\\Server.cs",
               "RelativeDocumentMoniker": "models\\Server.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\MiniMessenger\\models\\Server.cs",
               "RelativeToolTip": "models\\Server.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAkwHEAAABrAAAAAAAAAA==",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAiwFcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-06T23:59:06.256Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ServerForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MiniMessenger\\forms\\ServerForm.cs",
-              "RelativeDocumentMoniker": "forms\\ServerForm.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\MiniMessenger\\forms\\ServerForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "forms\\ServerForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T23:01:01.361Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "MessageClass.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MiniMessenger\\models\\MessageClass.cs",
               "RelativeDocumentMoniker": "models\\MessageClass.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\MiniMessenger\\models\\MessageClass.cs",
               "RelativeToolTip": "models\\MessageClass.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T01:58:37.377Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "ClientHandler.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MiniMessenger\\models\\ClientHandler.cs",
               "RelativeDocumentMoniker": "models\\ClientHandler.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\MiniMessenger\\models\\ClientHandler.cs",
               "RelativeToolTip": "models\\ClientHandler.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAIwFgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwFgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-13T07:46:53.753Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClientForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MiniMessenger\\forms\\ClientForm.Designer.cs",
+              "RelativeDocumentMoniker": "forms\\ClientForm.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\MiniMessenger\\forms\\ClientForm.Designer.cs",
+              "RelativeToolTip": "forms\\ClientForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T10:09:26.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServerForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MiniMessenger\\forms\\ServerForm.cs",
+              "RelativeDocumentMoniker": "forms\\ServerForm.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\MiniMessenger\\forms\\ServerForm.cs",
+              "RelativeToolTip": "forms\\ServerForm.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAWwG8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T08:44:34.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ServerForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MiniMessenger\\forms\\ServerForm.cs",
+              "RelativeDocumentMoniker": "forms\\ServerForm.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\MiniMessenger\\forms\\ServerForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "forms\\ServerForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T23:01:01.361Z"
             },
             {
               "$type": "Document",
@@ -177,8 +175,7 @@
               "RelativeToolTip": "ProgrammChat.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAqwBMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T10:14:17.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T10:14:17.855Z"
             },
             {
               "$type": "Document",
@@ -190,8 +187,7 @@
               "RelativeToolTip": "forms\\ServerForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T09:23:39.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T09:23:39.651Z"
             },
             {
               "$type": "Document",

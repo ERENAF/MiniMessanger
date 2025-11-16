@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -30,6 +31,7 @@ namespace MiniMessenger.forms
         private Panel messagePanel;
         private TextBox messageTextBox;
         private Button sendButton;
+        private Button attachButton;
 
         private SplitContainer splitContainer;
         private TextBox chatHistory;
@@ -68,8 +70,9 @@ namespace MiniMessenger.forms
             messagePanel = new Panel { Dock = DockStyle.Bottom, Height = 80 };
             messageTextBox = new TextBox { Location = new Point(10, 10), Size = new Size(400, 40), Multiline = true };
             sendButton = new Button { Text = "Отправить", Location = new Point(420, 10), Size = new Size(80, 40) };
+            attachButton = new Button { Text = "Прикрепить", Location = new Point(420, 60), Size = new Size(80, 40) };
 
-            messagePanel.Controls.AddRange(new Control[] { messageTextBox, sendButton });
+            messagePanel.Controls.AddRange(new Control[] { messageTextBox, sendButton, attachButton });
 
             splitContainer = new SplitContainer { Dock = DockStyle.Fill };
             chatHistory = new TextBox
@@ -93,6 +96,7 @@ namespace MiniMessenger.forms
             connectButton.Click += (s, e) => ConnectToServer();
             disconnectButton.Click += (s, e) => Disconnect();
             sendButton.Click += (s, e) => SendMessage();
+            attachButton.Click += (s, e) => AttachFile();
             messageTextBox.KeyPress += (s, e) =>
             {
                 if (e.KeyChar == (char)Keys.Enter)
@@ -146,6 +150,37 @@ namespace MiniMessenger.forms
             messageTextBox.Clear();
         }
 
+        private async void AttachFile()
+        {
+            var openFileDialog = new OpenFileDialog
+            {
+                Filter = "All files (*.*)|*.*",
+                Title = "Select file to send"
+            };
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                var fileData = new FileInfo(openFileDialog.FileName);
+                if (fileData.Length > 10 * 1024 * 1024)
+                {
+                    MessageBox.Show("Размер файла превышает 10 МБ");
+                    return;
+                }
+
+                var file =  File.ReadAllBytes(openFileDialog.FileName);
+                var message = new MessageClass
+                {
+                    Author = usernameTextBox.Text,
+                    Text = "File attachment",
+                    CreateTime = DateTime.Now,
+                    MessageType= TypeMessage.File,
+                    FileData = file,
+                    FileName = fileData.Name
+                };
+                await client.SendMessage(message);
+            }
+        }
+
         private void OnMessageReceived(MessageClass message)
         {
             if (InvokeRequired)
@@ -159,6 +194,11 @@ namespace MiniMessenger.forms
             chatHistory.ScrollToCaret();
 
             mHistory.Add(message);
+            if (message.MessageType == TypeMessage.File)
+            {
+                Task.Run(() => SaveFile(message));
+            }
+
             Task.Run(() => SaveChatHistory());
         }
 
@@ -198,6 +238,32 @@ namespace MiniMessenger.forms
                 userList.Items.Clear();
             }
         }
+
+        private async Task SaveFile(MessageClass message)
+        {
+            try
+            {
+                var downloadsPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
+                var filePath = Path.Combine(downloadsPath, message.FileName);
+
+                int counter = 1;
+                var originalFileName = Path.GetFileNameWithoutExtension(message.FileName);
+                var extension = Path.GetExtension(message.FileName);
+
+                while (File.Exists(filePath))
+                {
+                    filePath = Path.Combine(downloadsPath, $"{originalFileName} ({counter}){extension}");
+                    counter++;
+                }
+
+                File.WriteAllBytes(filePath, message.FileData);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to save file: {ex.Message}");
+            }
+        }
+
 
         private async Task SaveChatHistory()
         {

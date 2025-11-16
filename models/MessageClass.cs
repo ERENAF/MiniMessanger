@@ -13,7 +13,8 @@ namespace MiniMessenger.models
         Text,
         Connection,
         Disconnection,
-        UserList
+        UserList,
+        File
     }
     [Serializable]
     public class MessageClass
@@ -22,6 +23,8 @@ namespace MiniMessenger.models
         public string Text { get; set; } = string.Empty;
         public DateTime CreateTime { get; set; }
         public TypeMessage MessageType { get; set; }
+        public byte[] FileData { get; set;  } = Array.Empty<byte>();
+        public string FileName { get; set; } = string.Empty;
 
         public string ToJson()
         {

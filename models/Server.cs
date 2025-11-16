@@ -54,18 +54,15 @@ namespace MiniMessenger.models
 
         private void OnMessageReceived(MessageClass message, ClientHandler sender)
         {
-            // Отображаем сообщение на сервере
             MessageReceived?.Invoke(message);
 
             switch (message.MessageType)
             {
                 case TypeMessage.Text:
-                    BroadcastMessage(message, sender);
+                    BroadcastMessage(message);
                     break;
                 case TypeMessage.Connection:
-                    // При подключении обновляем список пользователей
                     UpdateUserList();
-                    // И рассылаем уведомление
                     var notificationMessage = new MessageClass
                     {
                         Author = "Server",
@@ -76,7 +73,18 @@ namespace MiniMessenger.models
                     BroadcastMessage(notificationMessage);
                     break;
                 case TypeMessage.Disconnection:
-                    // Обработка отключения
+                    UpdateUserList();
+                    var disconnectMessage = new MessageClass
+                    {
+                        Author = "Server",
+                        Text = $"{message.Author} left the chat",
+                        MessageType = TypeMessage.Text,
+                        CreateTime = DateTime.Now
+                    };
+                    BroadcastMessage(disconnectMessage);
+                    break;
+                case TypeMessage.File:
+                    BroadcastMessage(message);
                     break;
             }
         }
@@ -97,17 +105,14 @@ namespace MiniMessenger.models
             MessageReceived?.Invoke(notificationMessage);
         }
 
-        private async void BroadcastMessage(MessageClass message, ClientHandler excludeSender = null)
+        private async void BroadcastMessage(MessageClass message)
         {
             var tasks = new List<Task>();
             foreach (var client in chatManagers.ToList())
             {
                 try
                 {
-                    if (message.MessageType == TypeMessage.Text)
-                    {
-                        tasks.Add(client.SendMessageAsync(message));
-                    }
+                    tasks.Add(client.SendMessageAsync(message));
                 }
                 catch (Exception ex)
                 {

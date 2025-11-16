@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniMessenger")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6966cb655844cd207b115922237d910bc0bf549f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59a64f0beb97935957ba707796540fb39fae9da1")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniMessenger")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniMessenger")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
