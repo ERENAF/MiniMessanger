@@ -39,7 +39,8 @@ namespace MiniMessenger.models
 
         public override string ToString()
         {
-            return $"[{CreateTime:HH:mm:ss}] {Author}: {Text}";
+            if (this.Recipient == "") return $"[{CreateTime:HH:mm:ss}] {Author}: {Text}";
+            else return $"[{CreateTime:HH:mm:ss}] {Author} to {Recipient}: {Text}";
         }
     }
 }

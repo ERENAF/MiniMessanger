@@ -87,7 +87,7 @@ namespace MiniMessenger.forms
         {
             try
             {
-                await server.StartServer(ipAddress,port);
+                await server.StartServer(port);
                 AddServerMessage($"Server started on port {ipAddress.ToString()} : {port}");
             }
             catch (Exception ex)

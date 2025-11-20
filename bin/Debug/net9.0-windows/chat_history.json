@@ -1384,5 +1384,275 @@
     "FileData": "",
     "FileName": "",
     "Recipient": "User1"
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T14:00:49.5428117+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User1",
+    "Text": "",
+    "CreateTime": "2025-11-16T14:01:01.0388603+10:00",
+    "MessageType": 1,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T14:01:10.0937298+10:00",
+    "MessageType": 1,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User",
+    "Text": "asdasd",
+    "CreateTime": "2025-11-16T14:01:13.3308357+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User1",
+    "Text": "\u043F\u0440\u0438\u0432\u0435\u0442",
+    "CreateTime": "2025-11-16T14:01:23.0338887+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T14:02:54.8678756+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T14:03:02.2403382+10:00",
+    "MessageType": 1,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User",
+    "Text": "sa",
+    "CreateTime": "2025-11-16T14:03:04.2614318+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User2",
+    "Text": "",
+    "CreateTime": "2025-11-16T14:03:23.280415+10:00",
+    "MessageType": 1,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User2",
+    "Text": "asda",
+    "CreateTime": "2025-11-16T14:03:30.4259543+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": "User"
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T14:06:33.5967752+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User1",
+    "Text": "",
+    "CreateTime": "2025-11-16T14:06:43.737234+10:00",
+    "MessageType": 1,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User2",
+    "Text": "",
+    "CreateTime": "2025-11-16T14:06:52.2369572+10:00",
+    "MessageType": 1,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User2",
+    "Text": "dasda",
+    "CreateTime": "2025-11-16T14:06:59.0352155+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": "User1"
+  },
+  {
+    "Author": "User2",
+    "Text": "\u043F\u0440\u0438\u0432\u0435\u0442",
+    "CreateTime": "2025-11-16T14:07:15.0754968+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T14:16:25.6697444+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User1",
+    "Text": "",
+    "CreateTime": "2025-11-16T14:16:33.5366822+10:00",
+    "MessageType": 1,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User2",
+    "Text": "",
+    "CreateTime": "2025-11-16T14:16:45.1623861+10:00",
+    "MessageType": 1,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User2",
+    "Text": "\u043F\u0440\u0438\u0432\u0435\u0442",
+    "CreateTime": "2025-11-16T14:16:56.0467903+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": "User1"
+  },
+  {
+    "Author": "User2",
+    "Text": "File attachment",
+    "CreateTime": "2025-11-16T14:17:05.3639397+10:00",
+    "MessageType": 4,
+    "FileData": "0J/QtdGA0LLRi9C5INGB0LHQvtGAIC0g0YTQvtGC0L7QvtGF0L7RgtCwDQoNCtCi0L7Qu9C/0L7QuSDQvdC+0LLRi9C5INC90LDQsdC+0YAg0YXQvtC00Y/RgiDQvtGCINGB0YLQsNC90YbQuNC4INC6INGB0YLQsNC90YbQuNC4IA0K0JLQtdC00LXRgiDRgtC+0LvQv9GDINCh0LDRiNCwDQoNCtCc0LDRgdC60L7RgtGLOg0KDQrQmtGA0YvRgdCwINChKysNCtCh0LvQvtC9IFBIUA0K0JfQvNC10Y8g0J/QsNC50YLQvtC9DQrQnNC10LTQstC10LTRjCBHbw0K0L/RgNC+0YHRgtC+IFINCg0K0JjRgdC/0YvRgtCw0L3QuNGPOiANCg0K0JTQvtCz0L7QvdC4INC60YDRi9GB0YMg0KErKw0K",
+    "FileName": "\u043F\u0435\u0440\u0432\u044B\u0439 \u0441\u0431\u043E\u0440.txt",
+    "Recipient": "User1"
+  },
+  {
+    "Author": "User2",
+    "Text": "\u043F\u0440\u0438\u0432\u0435\u0442",
+    "CreateTime": "2025-11-16T14:17:30.0165412+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-16T17:56:57.8449059+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-16T17:57:19.6566652+10:00",
+    "MessageType": 1,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-21T00:18:12.9419608+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-21T00:18:14.317403+10:00",
+    "MessageType": 1,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "Server",
+    "Text": "Server started on port 26.197.233.10 : 49152",
+    "CreateTime": "2025-11-21T00:19:02.6657583+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-21T00:19:14.9437838+10:00",
+    "MessageType": 1,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User",
+    "Text": "",
+    "CreateTime": "2025-11-21T00:19:18.8744444+10:00",
+    "MessageType": 2,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "Server",
+    "Text": "User left the chat",
+    "CreateTime": "2025-11-21T00:19:19.00136+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "Server",
+    "Text": "User left the chat",
+    "CreateTime": "2025-11-21T00:19:19.0129697+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
   }
 ]

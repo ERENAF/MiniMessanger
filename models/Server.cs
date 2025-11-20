@@ -18,9 +18,9 @@ namespace MiniMessenger.models
         public event Action<MessageClass> MessageReceived;
         public event Action<List<string>> UserListUpdated;
 
-        public async Task StartServer(IPAddress ipAddress, int port)
+        public async Task StartServer(int port)
         {
-            listener = new TcpListener(ipAddress, port);
+            listener = new TcpListener(IPAddress.Any, port);
             listener.Start();
             isRunning = true;
 
@@ -33,7 +33,6 @@ namespace MiniMessenger.models
                         var client = await listener.AcceptTcpClientAsync();
                         var handler = new ClientHandler(client);
 
-                        // ДОБАВЛЯЕМ клиента в список сразу при подключении
                         chatManagers.Add(handler);
 
                         handler.MessageReceived += OnMessageReceived;
@@ -107,7 +106,7 @@ namespace MiniMessenger.models
 
         private async void BroadcastMessage(MessageClass message)
         {
-            if (message.Recipient == null)
+            if (message.Recipient == "")
             {
                 var tasks = new List<Task>();
                 foreach (var client in chatManagers.ToList())
@@ -124,8 +123,11 @@ namespace MiniMessenger.models
             }
             else
             {
+                var sender = chatManagers.Find(c => c.Username == message.Author);
+                sender?.SendMessageAsync(message);
                 var recipient = chatManagers.Find(c => c.Username == message.Recipient);
                 recipient?.SendMessageAsync(message);
+                
             }
         }
 

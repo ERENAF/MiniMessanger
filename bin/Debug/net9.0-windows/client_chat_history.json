@@ -268,5 +268,131 @@
     "FileData": "",
     "FileName": "",
     "Recipient": "User1"
+  },
+  {
+    "Author": "Server",
+    "Text": "User joined the chat",
+    "CreateTime": "2025-11-16T14:03:02.2507449+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User",
+    "Text": "sa",
+    "CreateTime": "2025-11-16T14:03:04.2614318+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "Server",
+    "Text": "User2 joined the chat",
+    "CreateTime": "2025-11-16T14:03:23.2859677+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User2",
+    "Text": "asda",
+    "CreateTime": "2025-11-16T14:03:30.4259543+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": "User"
+  },
+  {
+    "Author": "Server",
+    "Text": "User2 joined the chat",
+    "CreateTime": "2025-11-16T14:06:52.2425087+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User2",
+    "Text": "dasda",
+    "CreateTime": "2025-11-16T14:06:59.0352155+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": "User1"
+  },
+  {
+    "Author": "User2",
+    "Text": "\u043F\u0440\u0438\u0432\u0435\u0442",
+    "CreateTime": "2025-11-16T14:07:15.0754968+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "Server",
+    "Text": "User2 joined the chat",
+    "CreateTime": "2025-11-16T14:16:45.1654666+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "User2",
+    "Text": "\u043F\u0440\u0438\u0432\u0435\u0442",
+    "CreateTime": "2025-11-16T14:16:56.0467903+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": "User1"
+  },
+  {
+    "Author": "User2",
+    "Text": "File attachment",
+    "CreateTime": "2025-11-16T14:17:05.3639397+10:00",
+    "MessageType": 4,
+    "FileData": "0J/QtdGA0LLRi9C5INGB0LHQvtGAIC0g0YTQvtGC0L7QvtGF0L7RgtCwDQoNCtCi0L7Qu9C/0L7QuSDQvdC+0LLRi9C5INC90LDQsdC+0YAg0YXQvtC00Y/RgiDQvtGCINGB0YLQsNC90YbQuNC4INC6INGB0YLQsNC90YbQuNC4IA0K0JLQtdC00LXRgiDRgtC+0LvQv9GDINCh0LDRiNCwDQoNCtCc0LDRgdC60L7RgtGLOg0KDQrQmtGA0YvRgdCwINChKysNCtCh0LvQvtC9IFBIUA0K0JfQvNC10Y8g0J/QsNC50YLQvtC9DQrQnNC10LTQstC10LTRjCBHbw0K0L/RgNC+0YHRgtC+IFINCg0K0JjRgdC/0YvRgtCw0L3QuNGPOiANCg0K0JTQvtCz0L7QvdC4INC60YDRi9GB0YMg0KErKw0K",
+    "FileName": "\u043F\u0435\u0440\u0432\u044B\u0439 \u0441\u0431\u043E\u0440.txt",
+    "Recipient": "User1"
+  },
+  {
+    "Author": "User2",
+    "Text": "\u043F\u0440\u0438\u0432\u0435\u0442",
+    "CreateTime": "2025-11-16T14:17:30.0165412+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "Server",
+    "Text": "User joined the chat",
+    "CreateTime": "2025-11-16T17:57:19.6757335+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "Server",
+    "Text": "User joined the chat",
+    "CreateTime": "2025-11-21T00:18:14.3873605+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
+  },
+  {
+    "Author": "Server",
+    "Text": "User joined the chat",
+    "CreateTime": "2025-11-21T00:19:14.9953299+10:00",
+    "MessageType": 0,
+    "FileData": "",
+    "FileName": "",
+    "Recipient": ""
   }
 ]
